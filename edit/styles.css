@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+:root {
+    --Very-light-pink: #C7C7C7;
+    --White: #FFFFFF;
+    --Text-input-field: #F7F7F7;
+    --Black: #000000;
+    --Hospital-green: #ACD9B2;
+    --Dark: #232830;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: start;
+    margin-bottom: 52px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .inputs-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.value {
+    color: var(--Very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+
+.form a {
+    font-size: var(--sm);
+    color: var(--Hospital-green);
+    text-decoration: none;
+    margin-bottom: 52px;
+    text-align: center;
+}
+
+.primary-button {
+    background-color: var(--Hospital-green);
+    border-radius: 8px;
+    color: var(--White);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    font-size: var(--md);
+}
+
+.secundary-button {
+    background-color: var(--White);
+    border-radius: 8px;
+    color: var(--Hospital-green);
+    border: 1px solid var(--Hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    font-size: var(--md);
+}
+
+.login-button {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.input-name,
+.input-email,
+.input-passw {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 640px) {
+    .form-container {
+        height: 100%;
+    }
+    .form {
+        height: 100%;
+        justify-content: space-between;
+    }
+}
